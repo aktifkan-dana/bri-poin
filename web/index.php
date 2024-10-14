@@ -144,7 +144,7 @@
             <!--header end here-->
             <div class="main" style="margin-top: 100px; width: 100%; ">
                 <div class="innerMain">
-                    <div class="bnr" style=" width: 100%; position: absolute; left: 0; right: 0; margin-top: -20px">
+                    <div class="bnr" style=" width: 100%; position: absolute; left: 0; right: 0; margin-top: 0px">
                         <div class="carousel" data-flickity>
                             <div class="align-items-center d-flex flex-row row caraousel-cell">
                                 <div class="col-md-12 col-12 order-md-1 order-0">
