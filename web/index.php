@@ -49,6 +49,18 @@
    
     <script src="https://bripoin.bri.co.id/Jquery/jquery.selectric.min.js" type="text/javascript"></script>
     <script src="https://bripoin.bri.co.id/Jquery/language.js" type="text/javascript"></script>
+     <link href="https://bripoin.bri.co.id/Css/avenir-lt-std.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bripoin.bri.co.id/Css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://bripoin.bri.co.id/Css/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/main.css" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/jquery-ui.css" rel="stylesheet" />
+     <link href="font-awesome/https://bripoin.bri.co.id/Css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+    <link href="https://bripoin.bri.co.id/Css/dropDown.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
         $(document).ready(function () {
             $(document).ajaxStart(function () {
